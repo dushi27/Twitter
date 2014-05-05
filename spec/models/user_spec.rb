@@ -5,7 +5,10 @@ describe User do
                    password: "foobar", password_confirmation: "foobar") }
 
   subject { @user }
-
+  
+  it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
+  it { should respond_to(:authenticate) }
   it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
@@ -108,4 +111,8 @@ describe User do
       specify { expect(user_for_invalid_password).to be_false }
     end
   end
+  describe "remember token" do
+      before { @user.save }
+      its(:remember_token) { should_not be_blank }
+    end
 end
