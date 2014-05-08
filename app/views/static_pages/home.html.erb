@@ -1,10 +1,11 @@
-<% provide(:title, 'Home') %>
-  <div class="row">
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
       <section>
         <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/stats' %>
       </section>
       <section>
         <%= render 'shared/micropost_form' %>
@@ -15,15 +16,15 @@
       <%= render 'shared/feed' %>
     </div>
   </div>
-<% else %>
+    <% else %>
   <div class="center hero-unit">
     <h1>Welcome to Twitter</h1>
 
-    <h2>
-      This is the home page for the work-in-progress
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+    <h3>
+      Thank you for visiting! This application is built using
+      <a href="http://railstutorial.org/">Ruby on Rails Tutorial by Michael Hartl</a>. Please feel free to 
+      sign up, create tweets and follow other users.
+    </h3>
 
     <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>

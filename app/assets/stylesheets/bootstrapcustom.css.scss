@@ -48,8 +48,13 @@ textarea {
 /* typography */
 
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+h1, h2, h4, h5, h6 {
+  line-height: 1; 
+}
+
+h3 {
+  line-height: 1.5;
+  color: $grayLight;
 }
 
 
@@ -202,6 +207,34 @@ aside {
   }
 }
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
 
 /* forms */
 
