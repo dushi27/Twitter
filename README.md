@@ -1,6 +1,6 @@
 # Ruby on Rails Tutorial: sample Twitter like application
 
-This is the sample application for
+This is a Twitter like application built using
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
 by [Michael Hartl](http://michaelhartl.com/).
 
