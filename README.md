@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial: sample Twitter like application
+# Sample Twitter App
 
 This is a Twitter like application built using
 the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
