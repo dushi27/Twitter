@@ -18,12 +18,11 @@
   </div>
     <% else %>
   <div class="center hero-unit">
-    <h1>Welcome to Twitter</h1>
+    <h1>Welcome to the Twitter Twin</h1>
 
     <h3>
-      Thank you for visiting! This application is built using
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial by Michael Hartl</a>. Please feel free to 
-      sign up, create tweets and follow other users.
+      Thank you for visiting! Please feel free to 
+      sign up, create T-tweets and follow other users.
     </h3>
 
     <%= link_to "Sign up now!", signup_path,
@@ -31,6 +30,7 @@
   </div>
 
   <%= link_to image_tag("twitter_like_button.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+
 <% end %>
 
 
